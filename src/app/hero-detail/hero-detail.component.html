@@ -1,0 +1,25 @@
+<div *ngIf="hero">
+
+  <h2>{{hero.name | uppercase}} Details</h2>
+<div class="labelDiv">
+  <label>attack: <span>{{hero.atk}}</span></label>
+  <label>health: <span>{{hero.hlt}}</span></label>
+  <label>text: <span>{{hero.text}}</span></label>
+</div>
+  <div><span>id: </span>{{hero.id}}</div>
+  <div class="labelDiv">
+    <label>name:
+      <input [(ngModel)]="hero.name" placeholder="name"/>
+    </label>
+    <label>attack:
+      <input [(ngModel)]="hero.atk" placeholder="attack value"/>
+    </label>
+    <label>health:
+      <input [(ngModel)]="hero.hlt" placeholder="health value"/>
+    </label>
+    <label>text:
+      <input [(ngModel)]="hero.text" placeholder="text"/>
+    </label>
+  </div>
+
+</div>
